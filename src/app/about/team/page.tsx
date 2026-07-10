@@ -124,8 +124,8 @@ export default function TeamPage() {
                       <MemberSocials member={member} />
                     </div>
                   </article>
-                ))}
-              </div>
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
