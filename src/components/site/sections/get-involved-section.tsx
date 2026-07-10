@@ -45,7 +45,7 @@ const INVOLVEMENT = [
     icon: CalendarCheck,
     title: "Attend an Event",
     description:
-      "Show up to our next program — CPR training, sports day, advocacy drive. Bring a friend. Bring your kids. Bring your whole team.",
+      "Show up to our next program: CPR training, sports day, advocacy drive. Bring a friend. Bring your kids. Bring your whole team.",
     cta: "See upcoming events",
     href: "#programs",
   },

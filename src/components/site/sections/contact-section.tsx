@@ -51,7 +51,7 @@ export function ContactSection() {
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                 Whether you want to volunteer, partner, attend a program, or
-                just learn more — we read every message and reply within 48
+                just learn more, we read every message and reply within 48
                 hours.
               </p>
             </Reveal>

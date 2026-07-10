@@ -12,8 +12,13 @@ const NAV_LINKS: NavItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About", dropdown: [
     { href: "/about", label: "Our Story", description: "Who we are, why we exist, and the conviction behind the work." },
+    { href: "/about/team", label: "Our Team", description: "Meet the people behind the work, our philosophy, and how to join us." },
     { href: "/about#values", label: "Our Values", description: "Four values that shape every decision we make." },
     { href: "/about#journey", label: "Our Journey", description: "From conviction to programs. A timeline of how we got here." },
+  ]},
+  { href: "/projects", label: "Projects", dropdown: [
+    { href: "/projects", label: "All Projects", description: "Every project under The Wild Card Project, and what is coming next." },
+    { href: "/projects/wild-card-club", label: "The Wild Card Club", description: "Our flagship youth enrichment initiative. Partner with us." },
   ]},
   { href: "/programs", label: "Programs", dropdown: [
     { href: "/programs#education", label: "Education", description: "School partnerships, advocacy against child labour, quality learning campaigns." },
@@ -21,6 +26,7 @@ const NAV_LINKS: NavItem[] = [
     { href: "/programs#empowerment", label: "Empowerment", description: "Creative collaborations, mentorship, and youth-led storytelling." },
     { href: "/programs#upcoming", label: "Upcoming Events", description: "See the next program you can attend, host, or sponsor." },
   ]},
+  { href: "/articles", label: "Articles" },
   { href: "/impact", label: "Impact" },
   { href: "/contact", label: "Contact" },
 ];

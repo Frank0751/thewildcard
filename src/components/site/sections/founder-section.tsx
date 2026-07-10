@@ -37,8 +37,8 @@ export function FounderSection() {
               <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                 <p>
                   The Wild Card Project was founded on a simple conviction:
-                  that the young people most often overlooked — the wild cards
-                  — are exactly the ones our communities need most. They carry
+                  that the young people most often overlooked, the wild cards,
+                  are exactly the ones our communities need most. They carry
                   insight, resilience, and creativity that more privileged
                   paths rarely produce.
                 </p>
@@ -51,7 +51,7 @@ export function FounderSection() {
                   distance.
                 </p>
                 <p>
-                  Today, that conviction shows up in every program we run —
+                  Today, that conviction shows up in every program we run,
                   from how we choose partners, to how we measure success, to
                   how we talk about our work. We don&rsquo;t promise
                   transformation. We promise presence, honesty, and care.

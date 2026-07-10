@@ -16,9 +16,10 @@ const FOOTER_COLUMNS = [
   ]},
   { header: "Get to know us", links: [
     { href: "/about", label: "About Us" },
-    { href: "/programs", label: "Our Programs" },
-    { href: "/impact", label: "Our Impact" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/about/team", label: "Our Team" },
+    { href: "/projects", label: "Projects" },
+    { href: "/projects/wild-card-club", label: "The Wild Card Club" },
+    { href: "/articles", label: "Articles" },
   ]},
   { header: "Connect", links: [
     { href: "/contact", label: "Contact" },
