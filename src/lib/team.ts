@@ -32,10 +32,10 @@ export interface TeamMember {
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: "Founder Name",
+    name: "Veana Negasi",
     role: "Founder and Director",
-    bio: "Placeholder bio. Replace this with the founder's story: years spent working with NGOs, startups, and development organizations across Africa, and the conviction that the young people most often overlooked are exactly the ones our communities need most.",
-    image: "/photos/founder-colorful-dress.jpg",
+    bio: "Veana founded The Wild Card Project on a simple conviction: the young people most often overlooked are exactly the ones our communities need most. After years working alongside NGOs, startups, and development organizations across Africa, she is building the platform she wished existed, one that turns wild cards into aces.",
+    image: "/images/team/veana-negasi.jpg",
     socials: {
       instagram: "https://www.instagram.com/wearewildcard.gh",
       email: "mailto:thewildcardprojectgh@gmail.com",

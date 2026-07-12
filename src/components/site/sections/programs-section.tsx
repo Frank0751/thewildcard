@@ -36,6 +36,13 @@ export function ProgramsSection() {
                     <div className="flex items-center gap-2"><Clock className="h-3.5 w-3.5 text-brand-teal" /><span>{program.time}</span></div>
                     <div className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-brand-teal" /><span>{program.location}</span></div>
                   </div>
+                  {!program.past && (
+                    <div className="mt-5">
+                      <a href={`mailto:thewildcardprojectgh@gmail.com?subject=${encodeURIComponent(`Registration: ${program.title}`)}`} className="inline-flex items-center gap-1.5 rounded-full bg-brand-yellow px-4 py-2 text-xs font-semibold text-brand-charcoal transition-colors hover:bg-brand-yellow-dark">
+                        Register here<span aria-hidden="true">→</span>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </article>
             </Reveal>

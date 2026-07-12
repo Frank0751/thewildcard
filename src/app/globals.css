@@ -4,6 +4,8 @@
 
 @layer base {
   * { border-color: var(--border); }
+  html { scroll-behavior: smooth; }
+  ::selection { background: #F8DE22; color: #0F1A1A; }
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -74,4 +76,21 @@
   .display-2 { font-family: var(--font-crimson), Georgia, serif; font-size: clamp(2rem, 4.5vw, 3.75rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.02em; }
   .display-3 { font-family: var(--font-crimson), Georgia, serif; font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 600; line-height: 1.15; letter-spacing: -0.015em; }
   .eyebrow { font-family: var(--font-inter), system-ui, sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; }
+  .marquee-mask { mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); }
+  .marquee-track { display: flex; width: max-content; animation: marquee 55s linear infinite; }
+  .marquee-track.marquee-reverse { animation-direction: reverse; animation-duration: 65s; }
+  .marquee-group { display: flex; gap: 1.25rem; padding-right: 1.25rem; }
+  .marquee-mask:hover .marquee-track { animation-play-state: paused; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .hero-zoom { animation: hero-zoom 14s ease-out forwards; }
+  @keyframes hero-zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+  .float-slow { animation: float-y 7s ease-in-out infinite; }
+  .float-slower { animation: float-y 10s ease-in-out infinite; animation-delay: 1.5s; }
+  @keyframes float-y { 0%, 100% { translate: 0 0; } 50% { translate: 0 -14px; } }
+  .scroll-progress { position: fixed; top: 0; left: 0; right: 0; z-index: 60; height: 3px; background: linear-gradient(90deg, #006666, #478B8D 55%, #F8DE22); transform-origin: left; transform: scaleX(0); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .marquee-track, .hero-zoom, .float-slow, .float-slower { animation: none; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
 }

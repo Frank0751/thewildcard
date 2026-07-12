@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Instagram, Mail, MapPin, Twitter, Facebook, Youtube, Linkedin, ShieldCheck } from "lucide-react";
+import { Instagram, Mail, MapPin, ShieldCheck } from "lucide-react";
+import { SocialLinks } from "@/components/site/social-links";
 
 const FOOTER_COLUMNS = [
   { header: "Take Action", links: [
@@ -26,15 +27,6 @@ const FOOTER_COLUMNS = [
     { href: "https://www.instagram.com/wearewildcard.gh", label: "Instagram", external: true },
     { href: "mailto:thewildcardprojectgh@gmail.com", label: "Email", external: true },
   ]},
-];
-
-const SOCIALS = [
-  { icon: Instagram, href: "https://www.instagram.com/wearewildcard.gh", label: "Instagram" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:thewildcardprojectgh@gmail.com", label: "Email" },
 ];
 
 export function SiteFooter() {
@@ -68,13 +60,7 @@ export function SiteFooter() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-background/10 pt-8 md:flex-row md:items-center">
-          <div className="flex flex-wrap items-center gap-3">
-            {SOCIALS.map((social) => {
-              const Icon = social.icon;
-              const isExternal = social.href.startsWith("http");
-              return <a key={social.label} href={social.href} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})} aria-label={social.label} className="flex h-10 w-10 items-center justify-center rounded-full border border-background/20 text-background/80 transition-all hover:bg-brand-yellow hover:text-brand-charcoal hover:border-brand-yellow"><Icon className="h-4 w-4" /></a>;
-            })}
-          </div>
+          <SocialLinks variant="dark" />
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-background/70">
             <a href="mailto:thewildcardprojectgh@gmail.com" className="flex items-center gap-2 hover:text-brand-yellow"><Mail className="h-3.5 w-3.5" />thewildcardprojectgh@gmail.com</a>
             <span className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5" />Accra, Ghana</span>

@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[92vh] w-full overflow-hidden bg-brand-charcoal">
       <div className="absolute inset-0">
-        <img src="/photos/hero-homepage.jpg" alt="A group of Ghanaian youth in school uniforms taking a selfie with an adult, representing the joyful community The Wild Card Project serves" className="h-full w-full object-cover object-center" />
+        <img src="/photos/hero-homepage.jpg" alt="A group of Ghanaian youth in school uniforms taking a selfie with an adult, representing the joyful community The Wild Card Project serves" className="hero-zoom h-full w-full object-cover object-center" />
         <div className="absolute inset-0 hero-overlay" />
       </div>
       <div className="relative z-10 mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-end px-4 pb-16 pt-24 md:px-8 md:pb-24">

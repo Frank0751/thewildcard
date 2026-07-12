@@ -9,15 +9,15 @@ export function FounderSection() {
           <Reveal className="md:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-brand-cream">
               <img
-                src="/photos/founder-colorful-dress.jpg"
-                alt="Founder of The Wild Card Project"
+                src="/images/team/veana-negasi.jpg"
+                alt="Veana Negasi, founder of The Wild Card Project"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
             </div>
             <p className="mt-3 text-xs italic text-muted-foreground">
-              The founder of The Wild Card Project, photographed during a
-              program in Accra.
+              Veana Negasi, founder of The Wild Card Project, photographed
+              during a program in Accra.
             </p>
           </Reveal>
 
@@ -28,8 +28,8 @@ export function FounderSection() {
                 The Person Behind The Work
               </p>
               <h2 className="font-serif text-3xl font-bold leading-tight text-brand-charcoal text-balance md:text-4xl lg:text-5xl">
-                Built by someone who has worked with NGOs, startups, and
-                development organizations across Africa.
+                Founded by Veana Negasi, who has worked with NGOs, startups,
+                and development organizations across Africa.
               </h2>
             </Reveal>
 
@@ -43,7 +43,7 @@ export function FounderSection() {
                   paths rarely produce.
                 </p>
                 <p>
-                  Before starting The Wild Card Project, the founder spent years
+                  Before starting The Wild Card Project, Veana spent years
                   working alongside NGOs, startups, and development
                   organizations across the African continent. That experience
                   shaped a clear point of view: programs should be co-created

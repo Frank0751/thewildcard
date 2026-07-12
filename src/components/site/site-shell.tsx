@@ -1,10 +1,12 @@
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { PromoBar } from "@/components/site/promo-bar";
+import { ScrollProgress } from "@/components/site/scroll-progress";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <ScrollProgress />
       <PromoBar />
       <SiteHeader />
       <main className="flex-1">{children}</main>

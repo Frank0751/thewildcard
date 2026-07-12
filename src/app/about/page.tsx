@@ -32,20 +32,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
             <Reveal className="md:col-span-5">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-brand-cream-deep shadow-lg">
-                <img src="/photos/our-story-microphone.png" alt="A member of The Wild Card Project community speaking into a microphone at an event" className="h-full w-full object-cover" loading="lazy" />
+                <img src="/images/team/veana-negasi.jpg" alt="Veana Negasi, founder of The Wild Card Project, smiling with students during a school program in Accra" className="h-full w-full object-cover" loading="lazy" />
                 <div className="absolute right-4 top-4 h-3 w-3 rounded-full bg-brand-yellow shadow-md" />
               </div>
-              <p className="mt-4 text-xs italic text-muted-foreground">Giving young Ghanaians a microphone, a stage, and a platform to tell their own stories.</p>
+              <p className="mt-4 text-xs italic text-muted-foreground">Veana Negasi, founder of The Wild Card Project, during a school program in Accra.</p>
             </Reveal>
             <div className="md:col-span-7 md:pl-8">
               <Reveal>
                 <p className="eyebrow mb-5 text-brand-teal">Our Story</p>
-                <h2 className="display-2 text-brand-charcoal text-balance">Built by someone who has worked with NGOs, startups, and development organizations across Africa.</h2>
+                <h2 className="display-2 text-brand-charcoal text-balance">Founded by Veana Negasi, who has worked with NGOs, startups, and development organizations across Africa.</h2>
               </Reveal>
               <Reveal delay={120}>
                 <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                   <p>The Wild Card Project was founded on a simple conviction: that the young people most often overlooked, the wild cards, are exactly the ones our communities need most. They carry insight, resilience, and creativity that more privileged paths rarely produce.</p>
-                  <p>Before starting The Wild Card Project, the founder spent years working alongside NGOs, startups, and development organizations across the African continent. That experience shaped a clear point of view: programs should be co-created with the young people they serve, not designed for them from a distance.</p>
+                  <p>Before starting The Wild Card Project, Veana spent years working alongside NGOs, startups, and development organizations across the African continent. That experience shaped a clear point of view: programs should be co-created with the young people they serve, not designed for them from a distance.</p>
                   <p>Today, that conviction shows up in every program we run, from how we choose partners, to how we measure success, to how we talk about our work. We do not promise transformation. We promise presence, honesty, and care.</p>
                 </div>
               </Reveal>

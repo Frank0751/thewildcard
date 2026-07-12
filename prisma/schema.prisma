@@ -29,7 +29,7 @@ model Article {
   content     String
   coverImage  String?
   authorName  String
-  // authorType is one of: "founder", "team", "child"
+  // authorType is one of: "founder", "team", "child", "guest"
   authorType  String    @default("team")
   category    String    @default("Stories")
   published   Boolean   @default(false)

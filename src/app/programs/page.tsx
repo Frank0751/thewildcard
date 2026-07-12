@@ -4,7 +4,8 @@ import { PageHero } from "@/components/site/page-hero";
 import { PageCta } from "@/components/site/page-cta";
 import { Reveal } from "@/components/site/reveal";
 import { NewsletterSignup } from "@/components/site/newsletter-signup";
-import { BookOpen, Heart, Sparkles, Calendar, MapPin, Clock } from "lucide-react";
+import { BookOpen, Heart, Sparkles, Calendar, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = { title: "Programs", description: "The Wild Card Project runs programs across Education, Wellbeing, and Empowerment in Ghana." };
 
@@ -74,6 +75,14 @@ export default function ProgramsPage() {
                       <div className="flex items-center gap-2"><Calendar className="h-3.5 w-3.5 text-brand-teal" /><span>{program.date}</span></div>
                       <div className="flex items-center gap-2"><Clock className="h-3.5 w-3.5 text-brand-teal" /><span>{program.time}</span></div>
                       <div className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-brand-teal" /><span>{program.location}</span></div>
+                    </div>
+                    <div className="mt-6 flex items-center gap-3">
+                      <Button asChild size="sm" className="bg-brand-teal text-background hover:bg-brand-teal-dark">
+                        <a href={`mailto:thewildcardprojectgh@gmail.com?subject=${encodeURIComponent(`Registration: ${program.title}`)}&body=${encodeURIComponent("Hello Wild Card team,\n\nI would like to register for this program.\n\nFull name:\nPhone number:\nNumber of attendees:\n\nThank you.")}`}>
+                          Register here<ArrowRight className="ml-1.5 h-3.5 w-3.5" />
+                        </a>
+                      </Button>
+                      <span className="text-xs text-muted-foreground">Free and open to all. Reserve your seat early.</span>
                     </div>
                   </div>
                 </article>

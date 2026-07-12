@@ -11,7 +11,24 @@ export const AUTHOR_TYPES = [
   { value: "founder", label: "Founder" },
   { value: "team", label: "Team" },
   { value: "child", label: "Young Writer" },
+  { value: "guest", label: "Guest Voice" },
 ] as const;
+
+// Voice filters group author types for the public articles page and the
+// header dropdown. "team" includes the founder so the team voice never
+// feels artificially thin.
+export const VOICE_FILTERS = [
+  { value: "all", label: "All Voices", authorTypes: null },
+  { value: "kids", label: "From the Kids", authorTypes: ["child"] },
+  { value: "team", label: "From the Team", authorTypes: ["team", "founder"] },
+  { value: "guests", label: "Guest Voices", authorTypes: ["guest"] },
+] as const;
+
+export type VoiceFilterValue = (typeof VOICE_FILTERS)[number]["value"];
+
+export function resolveVoiceFilter(value: string | undefined) {
+  return VOICE_FILTERS.find((v) => v.value === value) ?? VOICE_FILTERS[0];
+}
 
 export const CATEGORIES = [
   "Stories",

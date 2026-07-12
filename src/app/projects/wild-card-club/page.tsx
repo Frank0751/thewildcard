@@ -17,6 +17,15 @@ import {
   Sparkles,
   CheckCircle2,
   ArrowLeft,
+  ArrowRight,
+  Stethoscope,
+  Smile,
+  Music,
+  PenTool,
+  HardHat,
+  Laptop,
+  ChefHat,
+  Trophy,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -97,8 +106,25 @@ const WE_ASK = [
   "Commitment to agreed timelines.",
 ];
 
+const FACILITATORS = [
+  { icon: Stethoscope, name: "Doctors and Nurses", detail: "Health, first aid, and how our bodies work." },
+  { icon: Smile, name: "Dentists", detail: "Oral health made friendly, not frightening." },
+  { icon: Music, name: "Artistes and Musicians", detail: "Rhythm, performance, and stage confidence." },
+  { icon: PenTool, name: "Writers and Storytellers", detail: "Finding your voice and telling your own story." },
+  { icon: HardHat, name: "Engineers", detail: "How things get built, from bridges to circuits." },
+  { icon: Laptop, name: "Tech Professionals", detail: "Coding, robotics, and digital confidence." },
+  { icon: ChefHat, name: "Chefs and Nutritionists", detail: "Food, nutrition, and kitchen creativity." },
+  { icon: Trophy, name: "Athletes and Coaches", detail: "Movement, discipline, and what teams teach us." },
+];
+
 const PARTNER_EMAIL =
   "mailto:thewildcardprojectgh@gmail.com?subject=Partnering with The Wild Card Club";
+
+const FACILITATOR_EMAIL = `mailto:thewildcardprojectgh@gmail.com?subject=${encodeURIComponent(
+  "Facilitator application: The Wild Card Club"
+)}&body=${encodeURIComponent(
+  "Hello Wild Card team,\n\nI would like to facilitate at The Wild Card Club.\n\nName:\nProfession:\nWhat I would love to teach:\nAvailability:\n\nThank you."
+)}`;
 
 export default function WildCardClubPage() {
   return (
@@ -239,6 +265,53 @@ export default function WildCardClubPage() {
         </div>
       </section>
 
+      {/* Our facilitators */}
+      <section id="facilitators" className="scroll-mt-24 bg-brand-cream py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow mb-5 text-brand-teal">Our Facilitators</p>
+            <h2 className="display-2 text-brand-charcoal text-balance">Real professionals. Real exposure.</h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Club sessions are led by facilitators from every walk of professional life. A doctor teaching first aid.
+              A dentist demystifying the clinic. An artiste turning a classroom into a stage. Exposure begins with
+              meeting someone who actually does the work.
+            </p>
+          </Reveal>
+          <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {FACILITATORS.map((facilitator, i) => {
+              const Icon = facilitator.icon;
+              return (
+                <Reveal key={facilitator.name} delay={i * 80}>
+                  <div className="group flex h-full items-start gap-4 rounded-2xl bg-background p-6 ring-1 ring-border/60 transition-all hover:-translate-y-1 hover:shadow-lg hover:ring-brand-teal/20">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-teal text-background transition-colors group-hover:bg-brand-yellow group-hover:text-brand-charcoal">
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-lg font-semibold text-brand-charcoal">{facilitator.name}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{facilitator.detail}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
+            <Reveal delay={FACILITATORS.length * 80}>
+              <a href={FACILITATOR_EMAIL} className="group flex h-full flex-col justify-between rounded-2xl bg-brand-teal p-6 text-background ring-1 ring-brand-teal transition-all hover:-translate-y-1 hover:bg-brand-teal-dark hover:shadow-xl">
+                <div>
+                  <h3 className="font-serif text-lg font-semibold">Your profession belongs here.</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-background/80">
+                    Whatever you do for a living, there is a child who has never met anyone who does it.
+                  </p>
+                </div>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand-yellow">
+                  Apply to facilitate
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </a>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* Who we are looking for */}
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
@@ -309,9 +382,12 @@ export default function WildCardClubPage() {
               Partnering with The Wild Card Club means expanding exposure, building confidence, and shaping the next
               generation of leaders.
             </p>
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-brand-teal text-background hover:bg-brand-teal-dark">
                 <a href={PARTNER_EMAIL}>Become a partner</a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-brand-teal/30 text-brand-teal hover:bg-brand-teal/5 hover:text-brand-teal">
+                <a href={FACILITATOR_EMAIL}>Apply to facilitate</a>
               </Button>
             </div>
           </Reveal>

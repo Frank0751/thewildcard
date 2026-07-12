@@ -6,6 +6,7 @@ import { PillarsSection } from "@/components/site/sections/pillars-section";
 import { WhyYouthSection } from "@/components/site/sections/why-youth-section";
 import { ProgramsSection } from "@/components/site/sections/programs-section";
 import { ImpactSection } from "@/components/site/sections/impact-section";
+import { TestimonialsSection } from "@/components/site/sections/testimonials-section";
 import { CtaBand } from "@/components/site/sections/cta-band";
 import { NewsletterSignup } from "@/components/site/newsletter-signup";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <WhyYouthSection />
       <ProgramsSection />
       <ImpactSection />
+      <TestimonialsSection />
       <CtaBand />
       <NewsletterSignup />
     </SiteShell>

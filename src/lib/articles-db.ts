@@ -6,10 +6,13 @@ import type { Article } from "@prisma/client";
 // database is unreachable, so the site still renders (with an empty list) when
 // DATABASE_URL is not set or migrations have not been run.
 
-export async function getPublishedArticles(): Promise<Article[]> {
+export async function getPublishedArticles(authorTypes?: readonly string[] | null): Promise<Article[]> {
   try {
     return await db.article.findMany({
-      where: { published: true },
+      where: {
+        published: true,
+        ...(authorTypes && authorTypes.length > 0 ? { authorType: { in: [...authorTypes] } } : {}),
+      },
       orderBy: [{ publishedAt: "desc" }, { createdAt: "desc" }],
     });
   } catch (error) {

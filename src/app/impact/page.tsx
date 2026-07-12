@@ -5,6 +5,7 @@ import { PageCta } from "@/components/site/page-cta";
 import { Reveal } from "@/components/site/reveal";
 import { StatCounter } from "@/components/site/stat-counter";
 import { NewsletterSignup } from "@/components/site/newsletter-signup";
+import { TestimonialsSection } from "@/components/site/sections/testimonials-section";
 import { Quote } from "lucide-react";
 
 export const metadata: Metadata = { title: "Impact", description: "Real numbers behind The Wild Card Project's work in Ghana." };
@@ -123,6 +124,7 @@ export default function ImpactPage() {
           </div>
         </div>
       </section>
+      <TestimonialsSection />
       <PageCta eyebrow="Want to be part of the next story?" title="Partner with us on the next program." description="We work with schools, NGOs, brands, and creatives who share our values and commit for the long term." primaryLabel="Start a partnership" primaryHref="mailto:thewildcardprojectgh@gmail.com?subject=Partnership with The Wild Card Project" secondaryLabel="Support our work" secondaryHref="/get-involved" />
       <NewsletterSignup />
     </SiteShell>

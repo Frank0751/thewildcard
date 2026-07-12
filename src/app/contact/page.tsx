@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Mail, MapPin, Instagram, Send } from "lucide-react";
+import { SocialLinks } from "@/components/site/social-links";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -24,7 +25,7 @@ export default function ContactPage() {
 
   return (
     <SiteShell>
-      <PageHero eyebrow="Contact" title="Let us talk." description="Whether you want to volunteer, partner, attend a program, or just learn more, we read every message and reply within 48 hours." />
+      <PageHero eyebrow="Contact" title="Partner with us." description="Whether you represent an organization, a school, or yourself, we welcome partnerships, volunteers, and questions. We read every message and reply within 48 hours." />
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
@@ -48,6 +49,10 @@ export default function ContactPage() {
                     <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-yellow text-brand-charcoal"><Instagram className="h-5 w-5" /></span>
                     <div><p className="eyebrow text-muted-foreground">Instagram</p><p className="font-serif text-lg font-semibold text-brand-charcoal group-hover:text-brand-teal">@wearewildcard.gh</p><p className="text-sm text-muted-foreground">Follow our day-to-day work and upcoming events</p></div>
                   </a>
+                  <div>
+                    <p className="eyebrow text-muted-foreground">Follow us</p>
+                    <SocialLinks variant="light" className="mt-3" />
+                  </div>
                 </div>
               </Reveal>
               <Reveal delay={240}>

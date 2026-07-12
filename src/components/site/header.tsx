@@ -19,6 +19,7 @@ const NAV_LINKS: NavItem[] = [
   { href: "/projects", label: "Projects", dropdown: [
     { href: "/projects", label: "All Projects", description: "Every project under The Wild Card Project, and what is coming next." },
     { href: "/projects/wild-card-club", label: "The Wild Card Club", description: "Our flagship youth enrichment initiative. Partner with us." },
+    { href: "/projects/wild-card-club#facilitators", label: "Become a Facilitator", description: "Doctors, dentists, artistes, engineers, chefs. Bring your profession to the Club." },
   ]},
   { href: "/programs", label: "Programs", dropdown: [
     { href: "/programs#education", label: "Education", description: "School partnerships, advocacy against child labour, quality learning campaigns." },
@@ -26,7 +27,12 @@ const NAV_LINKS: NavItem[] = [
     { href: "/programs#empowerment", label: "Empowerment", description: "Creative collaborations, mentorship, and youth-led storytelling." },
     { href: "/programs#upcoming", label: "Upcoming Events", description: "See the next program you can attend, host, or sponsor." },
   ]},
-  { href: "/articles", label: "Articles" },
+  { href: "/articles", label: "Articles", dropdown: [
+    { href: "/articles", label: "All Articles", description: "Every story, field note, and reflection in one place." },
+    { href: "/articles?voice=kids", label: "From the Kids", description: "Pieces written by the young people we work with." },
+    { href: "/articles?voice=team", label: "From the Team", description: "Field notes and reflections from our team and founder." },
+    { href: "/articles?voice=guests", label: "Guest Voices", description: "Perspectives from partners, facilitators, and friends of the work." },
+  ]},
   { href: "/impact", label: "Impact" },
   { href: "/contact", label: "Contact" },
 ];
@@ -43,7 +49,7 @@ export function SiteHeader() {
           <img src="/logo.png" alt="The Wild Card Project logo" className="h-11 w-11 object-contain transition-transform group-hover:scale-105" />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-lg font-semibold text-brand-teal">The Wild Card Project</span>
-            <span className="eyebrow text-brand-teal-light">Ghana · Youth · Aces</span>
+            <span className="eyebrow text-brand-teal-light">Wild Card to Aces</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">

@@ -7,7 +7,7 @@ import { Reveal } from "@/components/site/reveal";
 import { NewsletterSignup } from "@/components/site/newsletter-signup";
 import { ArrowRight, PenLine } from "lucide-react";
 import { getPublishedArticles } from "@/lib/articles-db";
-import { authorTypeLabel, formatDate, readingTime } from "@/lib/articles";
+import { authorTypeLabel, formatDate, readingTime, resolveVoiceFilter, VOICE_FILTERS } from "@/lib/articles";
 
 export const metadata: Metadata = {
   title: "Articles",
@@ -18,8 +18,10 @@ export const metadata: Metadata = {
 // Content comes from the database, so render on each request.
 export const dynamic = "force-dynamic";
 
-export default async function ArticlesPage() {
-  const articles = await getPublishedArticles();
+export default async function ArticlesPage({ searchParams }: { searchParams: Promise<{ voice?: string }> }) {
+  const { voice } = await searchParams;
+  const activeVoice = resolveVoiceFilter(voice);
+  const articles = await getPublishedArticles(activeVoice.authorTypes);
   const [featured, ...rest] = articles;
 
   return (
@@ -32,13 +34,36 @@ export default async function ArticlesPage() {
 
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
+          {/* Voice filter */}
+          <Reveal>
+            <div className="mb-12 flex flex-wrap items-center justify-center gap-2">
+              {VOICE_FILTERS.map((filter) => {
+                const isActive = filter.value === activeVoice.value;
+                return (
+                  <Link
+                    key={filter.value}
+                    href={filter.value === "all" ? "/articles" : `/articles?voice=${filter.value}`}
+                    className={`rounded-full px-5 py-2.5 text-sm font-medium transition-all ${
+                      isActive
+                        ? "bg-brand-teal text-background shadow-md"
+                        : "bg-brand-cream text-brand-charcoal ring-1 ring-border/60 hover:bg-brand-cream-deep hover:text-brand-teal"
+                    }`}
+                  >
+                    {filter.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </Reveal>
           {articles.length === 0 ? (
             <Reveal>
               <div className="mx-auto max-w-2xl rounded-2xl border border-dashed border-border bg-brand-cream p-12 text-center">
                 <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-teal text-background">
                   <PenLine className="h-6 w-6" />
                 </span>
-                <h2 className="mt-6 font-serif text-2xl font-semibold text-brand-charcoal">The first stories are on their way.</h2>
+                <h2 className="mt-6 font-serif text-2xl font-semibold text-brand-charcoal">
+                  {activeVoice.value === "all" ? "The first stories are on their way." : `Nothing under ${activeVoice.label} just yet.`}
+                </h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   We are getting ready to publish articles from our team, our founder, and the children we work with.
                   Check back soon, or subscribe below to know when the first one lands.
