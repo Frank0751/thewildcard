@@ -8,10 +8,10 @@ export function MissionSection() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
           <Reveal className="md:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-brand-cream-deep shadow-lg">
-              <img src="/photos/missions-youth-group.png" alt="A group of Ghanaian youth gathered for a Wild Card Project program" className="h-full w-full object-cover" loading="lazy" />
+              <img src="/images/programs/mhd-quality-education.jpg" alt="Students holding signs reading I deserve Quality Education and break the stigma at a Wild Card Project drive" className="h-full w-full object-cover" loading="lazy" />
               <div className="absolute right-4 top-4 h-3 w-3 rounded-full bg-brand-yellow shadow-md" />
             </div>
-            <p className="mt-4 text-xs italic text-muted-foreground">Young Ghanaians gathered for a Wild Card Project program in Accra.</p>
+            <p className="mt-4 text-xs italic text-muted-foreground">Students standing up for their right to health and quality education in Accra.</p>
           </Reveal>
           <div className="md:col-span-7 md:pl-8">
             <Reveal>

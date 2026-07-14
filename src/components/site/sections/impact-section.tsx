@@ -14,7 +14,7 @@ export function ImpactSection() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
           <Reveal className="md:col-span-6">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-charcoal"><img src="/photos/hero-homepage.jpg" alt="A group of Ghanaian youth in school uniforms taking a selfie with an adult" className="h-full w-full object-cover" loading="lazy" /></div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-charcoal"><img src="/images/programs/mhd-classroom.jpg" alt="A classroom of Ghanaian students during a Wild Card Project session" className="h-full w-full object-cover" loading="lazy" /></div>
           </Reveal>
           <div className="md:col-span-6 md:pl-4">
             <Reveal>

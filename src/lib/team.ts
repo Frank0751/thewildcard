@@ -52,7 +52,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Andrew Akoto-Addo",
     role: "Strategic Partner",
     bio: "A Pan-African social entrepreneur and ecosystem builder passionately committed to creating shared value across the continent. From Ghana's social sector to innovation labs in Shenzhen, India, Kigali, and Rabat, and developing entrepreneurship ecosystems in Accra, while fostering continental gatherings and intra-African trade across Africa. As Strategic Partner at The Wild Card Project, Andy provides strategic guidance, ecosystem partnerships, and long-term growth support.",
-    image: "",
+    image: "/images/team/andrew-akoto-addo.jpg",
     socials: {
       instagram: "https://www.instagram.com/andy.oneafrica",
       linkedin: "https://www.linkedin.com/search/results/people/?keywords=Andrews%20Akoto-Addo",
