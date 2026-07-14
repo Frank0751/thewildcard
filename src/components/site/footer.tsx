@@ -78,6 +78,13 @@ export function SiteFooter() {
             <Link href="/contact" className="hover:text-brand-yellow">Contact</Link>
             <span aria-hidden="true">·</span>
             <span>Built with care in Accra, Ghana.</span>
+            <span aria-hidden="true">·</span>
+            <span>
+              Website by{" "}
+              <a href="https://koombei.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow">
+                KoomBei
+              </a>
+            </span>
           </div>
         </div>
       </div>

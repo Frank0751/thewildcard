@@ -82,6 +82,16 @@ export const TEAM_MEMBERS: TeamMember[] = [
       email: "mailto:senamkobyy@gmail.com",
     },
   },
+  {
+    name: "Grace Darko",
+    role: "Program Coordinator",
+    bio: "Grace Darko holds a Diploma in Youth Development Work from the University of Ghana. She is passionate about community development, youth empowerment, and lifelong learning. As an intern, she is eager to learn, contribute, and gain practical experience in the non-profit sector.",
+    image: "",
+    socials: {
+      linkedin: "https://www.linkedin.com/search/results/people/?keywords=Grace%20Darko",
+      email: "mailto:gracedarko013@gmail.com",
+    },
+  },
 ];
 
 // The conviction that holds the team together. Edit freely.
