@@ -15,7 +15,9 @@
 
 export interface TeamSocial {
   instagram?: string;
+  facebook?: string;
   twitter?: string;
+  youtube?: string;
   linkedin?: string;
   email?: string;
 }
@@ -33,40 +35,51 @@ export interface TeamMember {
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Veana Negasi",
-    role: "Founder and Director",
-    bio: "Veana founded The Wild Card Project on a simple conviction: the young people most often overlooked are exactly the ones our communities need most. After years working alongside NGOs, startups, and development organizations across Africa, she is building the platform she wished existed, one that turns wild cards into aces.",
+    role: "Founder and Executive Director",
+    bio: "Veana Negasi (née Veana Acolatse) is a recording and performing artist, multi-hyphenate entrepreneur, strategist, and Business Administration student who believes that great ideas are only meaningful when they create real impact. From the stage to the boardroom, she is passionate about storytelling, entrepreneurship, and building communities that help people grow. Her work is driven by curiosity, service, and the conviction that creativity and business can come together to solve complex problems, inspire people, and shape a better future.",
     image: "/images/team/veana-negasi.jpg",
     socials: {
-      instagram: "https://www.instagram.com/wearewildcard.gh",
-      email: "mailto:thewildcardprojectgh@gmail.com",
+      instagram: "https://www.instagram.com/VeanaNegasi",
+      facebook: "https://www.facebook.com/VeanaNegasi",
+      twitter: "https://x.com/VeanaNegasi",
+      youtube: "https://www.youtube.com/@VeanaNegasi",
+      linkedin: "https://www.linkedin.com/search/results/people/?keywords=Veana%20Acolatse",
+      email: "mailto:Veanaacolatse@gmail.com",
     },
     lead: true,
   },
   {
-    name: "Team Member Name",
-    role: "Programs Lead",
-    bio: "Placeholder bio. Replace with this team member's background, what they lead on, and why they show up for the work. Two or three honest sentences is plenty.",
+    name: "Andrew Akoto-Addo",
+    role: "Strategic Partner",
+    bio: "A Pan-African social entrepreneur and ecosystem builder passionately committed to creating shared value across the continent. From Ghana's social sector to innovation labs in Shenzhen, India, Kigali, and Rabat, and developing entrepreneurship ecosystems in Accra, while fostering continental gatherings and intra-African trade across Africa. As Strategic Partner at The Wild Card Project, Andy provides strategic guidance, ecosystem partnerships, and long-term growth support.",
     image: "",
     socials: {
-      instagram: "https://www.instagram.com/wearewildcard.gh",
+      instagram: "https://www.instagram.com/andy.oneafrica",
+      linkedin: "https://www.linkedin.com/search/results/people/?keywords=Andrews%20Akoto-Addo",
+      email: "mailto:andrewsakotoaddo@gmail.com",
     },
   },
   {
-    name: "Team Member Name",
-    role: "Community and Partnerships",
-    bio: "Placeholder bio. Replace with this team member's background, the relationships they hold, and the communities they help us stay close to.",
+    name: "Richard Acolatse",
+    role: "Finance Director",
+    bio: "Richard Acolatse is the Finance Director of The Wild Card Project. He holds a Bachelor's degree in Business Administration from the University of Professional Studies, Accra (UPSA), and a Master's degree in Accounting and Taxation. He currently works at EY and is the founder of Car Culture. He is dedicated to community development and has supported students in government junior high schools across Ghana through donations of food, stationery, and other essential learning materials.",
     image: "",
     socials: {
-      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com/Rychee_richh",
+      twitter: "https://x.com/rycheee_",
+      linkedin: "https://www.linkedin.com/search/results/people/?keywords=Richard%20Acolatse",
+      email: "mailto:Acorich11@gmail.com",
     },
   },
   {
-    name: "Team Member Name",
-    role: "Storytelling and Media",
-    bio: "Placeholder bio. Replace with this team member's background, how they capture the work, and how they help young people tell their own stories.",
+    name: "Kobby Senam",
+    role: "Creative Director",
+    bio: "Kobby Senam is a creative strategist and brand designer with a passion for using design to tell compelling stories. He is the co-founder of Cranion House (now KomiKreatives) and currently serves as a Brand Designer at Chroma Digital. His portfolio includes work on the Creative and Communications Team behind the NDC People's Manifesto (2020). At The Wild Card Project, Kobby oversees creative direction, branding, visual identity, and communications, ensuring every initiative is presented with clarity, purpose, and impact.",
     image: "",
     socials: {
-      twitter: "https://twitter.com",
+      instagram: "https://www.instagram.com/kobbysenam_jnr",
+      linkedin: "https://www.linkedin.com/search/results/people/?keywords=Senam%20Alifo",
+      email: "mailto:senamkobyy@gmail.com",
     },
   },
 ];

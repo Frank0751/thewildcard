@@ -6,7 +6,7 @@ import { PageCta } from "@/components/site/page-cta";
 import { Reveal } from "@/components/site/reveal";
 import { NewsletterSignup } from "@/components/site/newsletter-signup";
 import { Button } from "@/components/ui/button";
-import { Instagram, Twitter, Linkedin, Mail, HandHeart, Heart } from "lucide-react";
+import { Instagram, Facebook, Twitter, Youtube, Linkedin, Mail, HandHeart, Heart } from "lucide-react";
 import { TEAM_MEMBERS, TEAM_PHILOSOPHY, type TeamMember } from "@/lib/team";
 
 export const metadata: Metadata = {
@@ -27,7 +27,9 @@ function initials(name: string) {
 function MemberSocials({ member }: { member: TeamMember }) {
   const links = [
     { key: "instagram", href: member.socials.instagram, Icon: Instagram, label: `${member.name} on Instagram` },
-    { key: "twitter", href: member.socials.twitter, Icon: Twitter, label: `${member.name} on Twitter` },
+    { key: "facebook", href: member.socials.facebook, Icon: Facebook, label: `${member.name} on Facebook` },
+    { key: "twitter", href: member.socials.twitter, Icon: Twitter, label: `${member.name} on X` },
+    { key: "youtube", href: member.socials.youtube, Icon: Youtube, label: `${member.name} on YouTube` },
     { key: "linkedin", href: member.socials.linkedin, Icon: Linkedin, label: `${member.name} on LinkedIn` },
     { key: "email", href: member.socials.email, Icon: Mail, label: `Email ${member.name}` },
   ].filter((l) => l.href);
@@ -73,6 +75,7 @@ export default function TeamPage() {
         eyebrow="Our Team"
         title="The people betting on the wild cards."
         description="A small team with one shared conviction. Meet the founder, the people who run the work, and see how you can join us as a volunteer."
+        image="/images/club/club-dental-group.jpg"
       />
 
       {/* Founder / lead */}

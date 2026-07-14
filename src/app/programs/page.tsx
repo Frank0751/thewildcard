@@ -17,7 +17,7 @@ const PILLARS = [
 
 const PROGRAMS = [
   { title: "CPR and First Aid Session, June Edition", date: "June 29 to 30, 2026", time: "11:30 AM to 1:00 PM", location: "No. 3 Bamako Road, East Legon, Accra", image: "/photos/hero-homepage.jpg", description: "A two-day hands-on training led by Dr. Isaac, equipping young people and community members with life-saving CPR and first aid skills. Free and open to all.", pillar: "Wellbeing", status: "upcoming" },
-  { title: "Menstrual Hygiene Awareness Day", date: "May 28, 2026", time: "All day", location: "Madina Estate, Accra", image: "/photos/missions-youth-group.png", description: "In partnership with Gyedzi Foundation, we delivered 1,000 sanitary pads and broke the stigma around menstruation in schools. Health personnel led sessions with students, parents, and teachers.", pillar: "Wellbeing", status: "past" },
+  { title: "Menstrual Hygiene Awareness Day", date: "May 28, 2026", time: "All day", location: "Madina Estate, Accra", image: "/images/programs/mhd-joy.jpg", description: "In partnership with Gyedzi Foundation, we delivered 1,000 sanitary pads and broke the stigma around menstruation in schools. Health personnel led sessions with students, parents, and teachers.", pillar: "Wellbeing", status: "past" },
   { title: "World Day Against Child Labour", date: "June 12, 2026", time: "All day", location: "Accra, Ghana", image: "/photos/empowerment-pillar.png", description: "An advocacy campaign led with Gyedzi Foundation highlighting the reality that millions of children are still pushed into labour instead of school, and what we can do about it, together.", pillar: "Education", status: "past" },
   { title: "Herons Sports Day", date: "March 27, 2026", time: "11:00 AM", location: "Accra, Ghana", image: "/photos/education-pillar.png", description: "A collaborative sports day with Herons International School, because play, movement, and teamwork are core to a young person's wellbeing, not optional extras.", pillar: "Wellbeing", status: "past" },
 ];
@@ -25,7 +25,7 @@ const PROGRAMS = [
 export default function ProgramsPage() {
   return (
     <SiteShell>
-      <PageHero eyebrow="Programs" title="Three pillars, run with care." description="We focus on Education, Wellbeing, and Empowerment. Every program is delivered in partnership with the communities it serves, and measured honestly." />
+      <PageHero eyebrow="Programs" title="Three pillars, run with care." description="We focus on Education, Wellbeing, and Empowerment. Every program is delivered in partnership with the communities it serves, and measured honestly." image="/images/programs/mhd-listening.jpg" />
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal className="mx-auto max-w-3xl text-center">

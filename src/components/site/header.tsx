@@ -43,7 +43,7 @@ export function SiteHeader() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-brand-cream shadow-sm supports-[backdrop-filter]:bg-brand-cream/90 supports-[backdrop-filter]:backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-8">
         <Link href="/" className="group flex items-center gap-3">
           <img src="/logo.png" alt="The Wild Card Project logo" className="h-11 w-11 object-contain transition-transform group-hover:scale-105" />

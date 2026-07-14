@@ -8,9 +8,6 @@ import { NewsletterSignup } from "@/components/site/newsletter-signup";
 import { Button } from "@/components/ui/button";
 import {
   Palette,
-  MessagesSquare,
-  Calculator,
-  Activity,
   HeartHandshake,
   Clock,
   Target,
@@ -26,20 +23,43 @@ import {
   Laptop,
   ChefHat,
   Trophy,
+  BookOpen,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "The Wild Card Club",
   description:
-    "The Wild Card Club is a structured youth enrichment initiative under The Wild Card Project. Weekly sessions that build creativity, literacy, critical thinking, movement, and character. Partner with us.",
+    "The Wild Card Club is the flagship literacy, creativity, and life skills programme of The Wild Card Project, for children aged 6 to 16. Read. Create. Lead. Partner with us.",
 };
 
-const PILLARS = [
-  { icon: Palette, name: "Creative Expression", detail: "Art, music, craft, and performance." },
-  { icon: MessagesSquare, name: "Literacy and Communication", detail: "Reading, storytelling, spelling, and debate." },
-  { icon: Calculator, name: "Logic and Critical Thinking", detail: "Abacus, mental math, and strategy games." },
-  { icon: Activity, name: "Movement and Play", detail: "Structured sports, dance, and coordination." },
-  { icon: HeartHandshake, name: "Character and Citizenship", detail: "Leadership, teamwork, and responsibility." },
+const FRAMEWORK = [
+  {
+    icon: BookOpen,
+    word: "Read",
+    tagline: "Confident readers, communicators, and lifelong learners.",
+    description:
+      "Reading circles, storytelling, writing activities, language development, and public speaking that help every child find and use their voice.",
+    image: "/images/club/club-outdoor-veana.jpg",
+    alt: "Wild Card Club children with a mentor outdoors in Accra",
+  },
+  {
+    icon: Palette,
+    word: "Create",
+    tagline: "Imagination and self-expression, unlocked.",
+    description:
+      "Music, arts and crafts, crochet, creative projects, innovation, and problem-solving that turn curiosity into confidence.",
+    image: "/images/club/club-drawing.jpg",
+    alt: "A Wild Card Club child proudly holding up her own drawing",
+  },
+  {
+    icon: HeartHandshake,
+    word: "Lead",
+    tagline: "Ready for life and leadership.",
+    description:
+      "Leadership, teamwork, financial literacy, and health education including dental awareness, CPR and first aid, plus community service, mentorship, and practical life skills that build confidence, resilience, responsibility, and empathy.",
+    image: "/images/club/club-dentist-demo.jpg",
+    alt: "A dentist teaching Wild Card Club children how to care for their teeth",
+  },
 ];
 
 const SESSION = [
@@ -67,7 +87,7 @@ const FORMATS = [
     n: "03",
     title: "Term-Based Partner",
     description:
-      "A structured collaboration supporting one of our five pillars for a full term. May include curriculum contribution and multiple sessions. Includes acknowledgment and reporting.",
+      "A structured collaboration supporting one of our focus areas for a full term. May include curriculum contribution and multiple sessions. Includes acknowledgment and reporting.",
   },
   {
     n: "04",
@@ -132,7 +152,8 @@ export default function WildCardClubPage() {
       <PageHero
         eyebrow="A Project of The Wild Card Project"
         title="The Wild Card Club"
-        description="A structured youth enrichment initiative. We expose children to new skills, new mentors, and new possibilities beyond traditional academics. Every child is a Wild Card: unpredictable, powerful, and full of untapped potential."
+        description="Our flagship literacy, creativity, and life skills club for children aged 6 to 16. A safe, engaging space where learning extends beyond the classroom and every child is encouraged to Read, Create, and Lead."
+        image="/images/club/club-brushing.jpg"
       />
 
       {/* Back link */}
@@ -151,26 +172,31 @@ export default function WildCardClubPage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
             <Reveal className="md:col-span-5">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-brand-cream-deep shadow-lg">
-                <img src="/photos/child-quality-education.jpg" alt="A child engaged in a Wild Card Club learning session" className="h-full w-full object-cover" loading="lazy" />
+                <img src="/images/club/club-veana-kids.jpg" alt="Veana Negasi with Wild Card Club children during a session" className="h-full w-full object-cover" loading="lazy" />
                 <div className="absolute right-4 top-4 h-3 w-3 rounded-full bg-brand-yellow shadow-md" />
               </div>
             </Reveal>
             <div className="md:col-span-7 md:pl-8">
               <Reveal>
                 <p className="eyebrow mb-5 text-brand-teal">Who We Are</p>
-                <h2 className="display-2 text-brand-charcoal text-balance">Intentional weekly sessions that develop the whole child.</h2>
+                <h2 className="display-2 text-brand-charcoal text-balance">Learning that extends beyond the classroom.</h2>
               </Reveal>
               <Reveal delay={120}>
                 <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                   <p>
-                    The Wild Card Club is a structured youth enrichment initiative under The Wild Card Project. We design
-                    intentional weekly sessions that develop creativity, literacy, communication, critical thinking,
-                    movement, and character formation in children.
+                    The Wild Card Club is the flagship programme of The Wild Card Project, a literacy, creativity, and life
+                    skills club dedicated to helping children discover their potential and develop the confidence,
+                    character, and skills they need to thrive.
                   </p>
                   <p>
-                    Our mission is to expose children to new skills, new mentors, and new possibilities beyond traditional
-                    academics. We believe every child is a Wild Card: unpredictable, powerful, and full of untapped
-                    potential.
+                    Designed for children aged 6 to 16, the Club provides a safe, engaging, and inspiring environment where
+                    learning extends beyond the classroom. Through fun, interactive, and hands-on experiences, children are
+                    encouraged to grow academically, creatively, socially, and emotionally.
+                  </p>
+                  <p>
+                    We believe every child has unique gifts waiting to be discovered. By nurturing literacy, creativity, and
+                    life skills, we empower children not only to excel in school but to become compassionate leaders,
+                    confident communicators, and responsible citizens.
                   </p>
                 </div>
               </Reveal>
@@ -179,28 +205,62 @@ export default function WildCardClubPage() {
         </div>
       </section>
 
-      {/* Core pillars */}
+      {/* Read. Create. Lead. */}
       <section className="bg-brand-cream py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow mb-5 text-brand-teal">Our Core Pillars</p>
-            <h2 className="display-2 text-brand-charcoal text-balance">Five pillars behind every session.</h2>
+            <p className="eyebrow mb-5 text-brand-teal">Our Approach</p>
+            <h2 className="display-2 text-brand-charcoal text-balance">
+              Read. <span className="text-brand-teal">Create.</span> Lead.
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Every session is built around three simple ideas. Together they help children grow academically,
+              creatively, socially, and emotionally.
+            </p>
           </Reveal>
-          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {PILLARS.map((pillar, i) => {
-              const Icon = pillar.icon;
+          <div className="mt-16 grid grid-cols-1 gap-7 md:grid-cols-3">
+            {FRAMEWORK.map((item, i) => {
+              const Icon = item.icon;
               return (
-                <Reveal key={pillar.name} delay={i * 90}>
-                  <div className="flex h-full flex-col rounded-2xl bg-background p-7 ring-1 ring-border/60 transition-all hover:shadow-lg hover:ring-brand-teal/20">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-teal text-background">
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <h3 className="mt-5 font-serif text-xl font-semibold text-brand-charcoal">{pillar.name}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{pillar.detail}</p>
+                <Reveal key={item.word} delay={i * 120}>
+                  <div className="group flex h-full flex-col overflow-hidden rounded-2xl bg-background ring-1 ring-border/60 transition-all hover:-translate-y-1 hover:shadow-xl hover:ring-brand-teal/20">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img src={item.image} alt={item.alt} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/50 to-transparent" />
+                      <span className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-brand-yellow text-brand-charcoal shadow-md">
+                        <Icon className="h-5 w-5" />
+                      </span>
+                      <h3 className="absolute bottom-4 left-4 font-serif text-3xl font-semibold text-white drop-shadow">{item.word}</h3>
+                    </div>
+                    <div className="flex flex-1 flex-col p-6">
+                      <p className="font-serif text-lg font-semibold text-brand-teal">{item.tagline}</p>
+                      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                    </div>
                   </div>
                 </Reveal>
               );
             })}
+          </div>
+          <Reveal delay={200}>
+            <p className="mx-auto mt-14 max-w-2xl text-center font-serif text-xl italic text-brand-charcoal md:text-2xl">
+              More than a club, we are a community where children are encouraged to Read. Create. Lead.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Full-width moment */}
+      <section className="relative overflow-hidden bg-brand-charcoal">
+        <img src="/images/club/club-dental-group.jpg" alt="Wild Card Club children celebrating during a dental awareness session" className="h-full w-full object-cover opacity-60" loading="lazy" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal via-brand-charcoal/70 to-transparent" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
+            <Reveal className="max-w-xl">
+              <p className="eyebrow mb-4 text-brand-yellow">Every Child Is a Wild Card</p>
+              <p className="font-serif text-2xl font-semibold text-white text-balance md:text-4xl">
+                Unpredictable, powerful, and full of untapped potential.
+              </p>
+            </Reveal>
           </div>
         </div>
       </section>

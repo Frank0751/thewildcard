@@ -17,7 +17,8 @@ const VALUES = [
 ];
 
 const TIMELINE = [
-  { year: "2024", title: "The idea takes shape", description: "After years working with NGOs, startups, and development organizations across Africa, the founder names the conviction that has been building for years: the wild cards are the ones we should be betting on." },
+  { year: "Over a decade ago", title: "Venus Globe Foundation begins", description: "Inspired by the example of her late grandmother Connie, Veana Negasi founds the Venus Globe Foundation with a simple mission: to serve others and create opportunities where they are needed most." },
+  { year: "2024", title: "The Wild Card Project takes shape", description: "Years of working with children, schools, and communities reveal one truth: potential is everywhere, but opportunity is not. Venus Globe Foundation evolves into The Wild Card Project." },
   { year: "Early 2026", title: "First programs launch", description: "The Wild Card Project runs its first public programs in Accra, beginning with school partnerships and wellbeing drives focused on menstrual hygiene and CPR training." },
   { year: "May 2026", title: "First major partnership", description: "In partnership with Gyedzi Foundation, we deliver 1,000 sanitary pads to students in Madina Estate and break the stigma around menstruation in schools." },
   { year: "Today", title: "Building what comes next", description: "Three program pillars are now active. Three partner organizations are working alongside us. The next chapter is about depth: more consistent presence, more honest measurement, more young people turned into aces." },
@@ -26,33 +27,56 @@ const TIMELINE = [
 export default function AboutPage() {
   return (
     <SiteShell>
-      <PageHero eyebrow="About Us" title="We exist for the ones most often overlooked." description="The Wild Card Project is a youth-focused nonprofit in Ghana working across Education, Wellbeing, and Empowerment. We help overlooked young people become aces." />
+      <PageHero eyebrow="About Us" title="We exist for the ones most often overlooked." description="The Wild Card Project is a youth-focused nonprofit in Ghana working across Education, Wellbeing, and Empowerment. We help overlooked young people become aces." image="/images/club/club-outdoor-veana.jpg" />
       <section id="founder" className="scroll-mt-24 bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow mb-5 text-brand-teal">Our Story</p>
+            <h2 className="display-2 text-brand-charcoal text-balance">A story about legacy.</h2>
+          </Reveal>
+          <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
             <Reveal className="md:col-span-5">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-brand-cream-deep shadow-lg">
-                <img src="/images/team/veana-negasi.jpg" alt="Veana Negasi, founder of The Wild Card Project, smiling with students during a school program in Accra" className="h-full w-full object-cover" loading="lazy" />
-                <div className="absolute right-4 top-4 h-3 w-3 rounded-full bg-brand-yellow shadow-md" />
+              <div className="md:sticky md:top-28">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-brand-cream-deep shadow-lg">
+                  <img src="/images/team/veana-with-students.jpg" alt="Veana Negasi, founder of The Wild Card Project, with students during a program in Accra" className="h-full w-full object-cover" loading="lazy" />
+                  <div className="absolute right-4 top-4 h-3 w-3 rounded-full bg-brand-yellow shadow-md" />
+                </div>
+                <p className="mt-4 text-xs italic text-muted-foreground">Veana Negasi, Founder and Executive Director, with students in Accra.</p>
+                <p className="mt-4 inline-flex items-center gap-2 rounded-full bg-brand-cream px-4 py-2 text-xs font-medium text-brand-teal ring-1 ring-border/60">
+                  <Heart className="h-3.5 w-3.5" aria-hidden="true" />
+                  In memory of Connie
+                </p>
               </div>
-              <p className="mt-4 text-xs italic text-muted-foreground">Veana Negasi, founder of The Wild Card Project, during a school program in Accra.</p>
             </Reveal>
             <div className="md:col-span-7 md:pl-8">
               <Reveal>
-                <p className="eyebrow mb-5 text-brand-teal">Our Story</p>
-                <h2 className="display-2 text-brand-charcoal text-balance">Founded by Veana Negasi, who has worked with NGOs, startups, and development organizations across Africa.</h2>
-              </Reveal>
-              <Reveal delay={120}>
-                <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-                  <p>The Wild Card Project was founded on a simple conviction: that the young people most often overlooked, the wild cards, are exactly the ones our communities need most. They carry insight, resilience, and creativity that more privileged paths rarely produce.</p>
-                  <p>Before starting The Wild Card Project, Veana spent years working alongside NGOs, startups, and development organizations across the African continent. That experience shaped a clear point of view: programs should be co-created with the young people they serve, not designed for them from a distance.</p>
-                  <p>Today, that conviction shows up in every program we run, from how we choose partners, to how we measure success, to how we talk about our work. We do not promise transformation. We promise presence, honesty, and care.</p>
+                <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+                  <p>The story of The Wild Card Project is, at its heart, a story about legacy. Long before the organization existed, our founder, Veana Negasi, was inspired by the quiet yet profound example of her late maternal grandmother, Connie. Growing up, she witnessed firsthand what genuine care and benevolence looked like. Through her generosity, compassion, and unwavering willingness to help others, Connie showed Veana that the greatest impact we can have is in the lives we choose to uplift.</p>
+                  <p>Those lessons became the foundation of a lifelong calling. Over a decade ago, Veana founded the Venus Globe Foundation with a simple mission: to serve others and create opportunities where they were needed most. What began as a small act of service gradually grew into a much bigger vision.</p>
+                  <p>Working alongside children, families, schools, and communities over the years revealed a simple but powerful truth: potential is everywhere, but opportunity is not. Every day, young people with remarkable gifts are overlooked, not because they lack ability, but because they lack access, encouragement, mentorship, or someone willing to believe in them.</p>
+                  <p>Those experiences also shaped a clear point of view: meaningful change happens when young people are treated as partners, not just participants. The most impactful programs are not designed for young people from a distance. They are co-created with them, informed by their experiences, aspirations, and the realities of their communities.</p>
                 </div>
               </Reveal>
-              <Reveal delay={240}>
-                <div className="mt-10 grid grid-cols-2 gap-6 border-t border-border pt-8">
+              <Reveal delay={120}>
+                <figure className="my-9 border-l-4 border-brand-yellow pl-6">
+                  <blockquote className="font-serif text-2xl font-semibold leading-snug text-brand-charcoal md:text-3xl">
+                    In a game of cards, a wild card is often the most unexpected card in the deck, frequently underestimated, yet capable of changing the outcome of the game. We believe young people are no different.
+                  </blockquote>
+                </figure>
+              </Reveal>
+              <Reveal delay={120}>
+                <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+                  <p>That realization transformed the vision. The Venus Globe Foundation evolved into The Wild Card Project, an organization founded on the belief that every child deserves the opportunity to discover their potential and shape their own future. The name Wild Card was chosen intentionally, because every child carries extraordinary potential waiting to be unlocked when given the right opportunities, guidance, encouragement, and support.</p>
+                  <p>Today, that founding conviction is reflected in everything we do. It influences how we design our programs, how we choose partners, how we collaborate with communities, and how we measure success. Rather than focusing solely on activities or outputs, we prioritize lasting impact, ensuring every initiative is relevant, inclusive, and responsive to the real needs, strengths, and aspirations of the young people we serve.</p>
+                  <p>Through education, creativity, leadership development, health initiatives, and community engagement, we are committed to equipping children and young people with the confidence, skills, and opportunities they need to thrive.</p>
+                  <p>More than an organization, The Wild Card Project is the continuation of Connie's legacy, a legacy of believing in people, creating opportunities, and reminding every child that their circumstances do not define their future.</p>
+                </div>
+              </Reveal>
+              <Reveal delay={200}>
+                <p className="mt-9 font-serif text-2xl font-semibold italic text-brand-teal">Turning Wild Cards into Aces.</p>
+                <div className="mt-8 grid grid-cols-2 gap-6 border-t border-border pt-8">
                   <div><p className="font-serif text-4xl font-semibold text-brand-teal">Accra</p><p className="mt-1 eyebrow text-muted-foreground">Based in Ghana</p></div>
-                  <div><p className="font-serif text-4xl font-semibold text-brand-teal">2024</p><p className="mt-1 eyebrow text-muted-foreground">Year Founded</p></div>
+                  <div><p className="font-serif text-4xl font-semibold text-brand-teal">2024</p><p className="mt-1 eyebrow text-muted-foreground">Wild Card Project Founded</p></div>
                 </div>
               </Reveal>
             </div>

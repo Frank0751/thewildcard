@@ -21,6 +21,7 @@ export default function ProjectsPage() {
         eyebrow="Our Projects"
         title="One conviction, many projects."
         description="The Wild Card Project runs distinct projects, each built to turn overlooked young people into aces. The Wild Card Club is where it starts."
+        image="/images/programs/mhd-joy.jpg"
       />
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">

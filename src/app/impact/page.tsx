@@ -18,7 +18,7 @@ const STATS = [
 ];
 
 const STORIES = [
-  { image: "/photos/missions-youth-group.png", title: "Breaking the silence around menstruation", pillar: "Wellbeing", date: "May 2026", summary: "In partnership with Gyedzi Foundation, we delivered 1,000 sanitary pads and ran sessions led by health personnel with students, parents, and teachers in Madina Estate. The drive did not just distribute supplies. It started conversations that schools had been avoiding for years.", outcome: "1,000 sanitary pads delivered" },
+  { image: "/images/programs/mhd-breakthestigma.jpg", title: "Breaking the silence around menstruation", pillar: "Wellbeing", date: "May 2026", summary: "In partnership with Gyedzi Foundation, we delivered 1,000 sanitary pads and ran sessions led by health personnel with students, parents, and teachers in Madina Estate. The drive did not just distribute supplies. It started conversations that schools had been avoiding for years.", outcome: "1,000 sanitary pads delivered" },
   { image: "/photos/empowerment-pillar.png", title: "Naming what children should not be doing", pillar: "Education", date: "June 2026", summary: "On World Day Against Child Labour, we worked with Gyedzi Foundation to highlight the reality that millions of children are still pushed into labour instead of school. The campaign put numbers and faces to a problem that is too often treated as inevitable.", outcome: "Public advocacy campaign delivered" },
   { image: "/photos/education-pillar.png", title: "Play as a serious part of wellbeing", pillar: "Wellbeing", date: "March 2026", summary: "A collaborative sports day with Herons International School reminded everyone involved that play, movement, and teamwork are not optional extras. They are core to a young person's wellbeing, and they deserve real time and real attention.", outcome: "School-wide participation" },
 ];
@@ -26,13 +26,12 @@ const STORIES = [
 const PARTNERS = [
   { name: "Gyedzi Foundation", role: "Program Partner", note: "Co-delivered Menstrual Hygiene Awareness Day and World Day Against Child Labour campaigns." },
   { name: "Herons International School", role: "Education and Venue Partner", note: "Hosted Sports Day and CPR and First Aid sessions. Co-creates youth wellbeing programs." },
-  { name: "Veana Negasi", role: "Creative Collaborator", note: "Partnered on youth empowerment and storytelling campaigns across Accra." },
 ];
 
 export default function ImpactPage() {
   return (
     <SiteShell>
-      <PageHero eyebrow="Impact" title="Small organization. Honest numbers." description="We are a young nonprofit. We do not promise transformation. We promise presence, honesty, and care. Here is what that looks like in practice." />
+      <PageHero eyebrow="Impact" title="Small organization. Honest numbers." description="We are a young nonprofit. We do not promise transformation. We promise presence, honesty, and care. Here is what that looks like in practice." image="/images/programs/mhd-unstoppable.jpg" />
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal className="mx-auto max-w-3xl text-center">
@@ -52,7 +51,7 @@ export default function ImpactPage() {
       <section className="bg-brand-charcoal py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
-            <Reveal className="md:col-span-6"><div className="relative aspect-[4/3] overflow-hidden rounded-2xl"><img src="/photos/hero-homepage.jpg" alt="A group of Ghanaian youth in school uniforms taking a selfie with an adult" className="h-full w-full object-cover" loading="lazy" /></div></Reveal>
+            <Reveal className="md:col-span-6"><div className="relative aspect-[4/3] overflow-hidden rounded-2xl"><img src="/images/programs/mhd-demo.jpg" alt="A student demonstrating menstrual hygiene to her classmates during a Wild Card Project session" className="h-full w-full object-cover" loading="lazy" /></div></Reveal>
             <div className="md:col-span-6 md:pl-4">
               <Reveal>
                 <p className="eyebrow mb-5 text-brand-yellow">Why This Matters</p>
