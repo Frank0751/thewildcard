@@ -39,8 +39,8 @@ const FRAMEWORK = [
     tagline: "Confident readers, communicators, and lifelong learners.",
     description:
       "Reading circles, storytelling, writing activities, language development, and public speaking that help every child find and use their voice.",
-    image: "/images/club/club-outdoor-veana.jpg",
-    alt: "Wild Card Club children with a mentor outdoors in Accra",
+    image: "/images/club/club-veana-kids.jpg",
+    alt: "Veana Negasi talking with Wild Card Club children",
   },
   {
     icon: Palette,
@@ -153,7 +153,7 @@ export default function WildCardClubPage() {
         eyebrow="A Project of The Wild Card Project"
         title="The Wild Card Club"
         description="Our flagship literacy, creativity, and life skills club for children aged 6 to 16. A safe, engaging space where learning extends beyond the classroom and every child is encouraged to Read, Create, and Lead."
-        image="/images/club/club-brushing.jpg"
+        image="/images/club/club-outdoor-veana.jpg"
       />
 
       {/* Back link */}
@@ -172,7 +172,7 @@ export default function WildCardClubPage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
             <Reveal className="md:col-span-5">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-brand-cream-deep shadow-lg">
-                <img src="/images/club/club-veana-kids.jpg" alt="Veana Negasi with Wild Card Club children during a session" className="h-full w-full object-cover" loading="lazy" />
+                <img src="/images/club/club-brushing.jpg" alt="A Wild Card Club child practising toothbrushing during a session" className="h-full w-full object-cover" loading="lazy" />
                 <div className="absolute right-4 top-4 h-3 w-3 rounded-full bg-brand-yellow shadow-md" />
               </div>
             </Reveal>
@@ -224,8 +224,8 @@ export default function WildCardClubPage() {
               return (
                 <Reveal key={item.word} delay={i * 120}>
                   <div className="group flex h-full flex-col overflow-hidden rounded-2xl bg-background ring-1 ring-border/60 transition-all hover:-translate-y-1 hover:shadow-xl hover:ring-brand-teal/20">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <img src={item.image} alt={item.alt} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                    <div className="relative aspect-[4/5] overflow-hidden">
+                      <img src={item.image} alt={item.alt} className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                       <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/50 to-transparent" />
                       <span className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-brand-yellow text-brand-charcoal shadow-md">
                         <Icon className="h-5 w-5" />

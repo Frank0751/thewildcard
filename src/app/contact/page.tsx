@@ -25,7 +25,7 @@ export default function ContactPage() {
 
   return (
     <SiteShell>
-      <PageHero eyebrow="Contact" title="Partner with us." description="Whether you represent an organization, a school, or yourself, we welcome partnerships, volunteers, and questions. We read every message and reply within 48 hours." />
+      <PageHero eyebrow="Contact" title="Partner with us." description="Whether you represent an organization, a school, or yourself, we welcome partnerships, volunteers, and questions. We read every message and reply within 48 hours." image="/images/programs/mhd-joy.jpg" />
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">

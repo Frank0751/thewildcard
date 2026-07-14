@@ -30,6 +30,7 @@ export default async function ArticlesPage({ searchParams }: { searchParams: Pro
         eyebrow="Articles and Blog"
         title="Words from our team, our founder, and our children."
         description="Stories from the field, reflections on the work, and pieces written by the young people we are proud to call Wild Cards. We encourage our children to write, and we publish them here."
+        image="/images/club/club-outdoor-veana.jpg"
       />
 
       <section className="bg-background py-24 md:py-32">

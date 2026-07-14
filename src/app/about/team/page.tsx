@@ -75,7 +75,7 @@ export default function TeamPage() {
         eyebrow="Our Team"
         title="The people betting on the wild cards."
         description="A small team with one shared conviction. Meet the founder, the people who run the work, and see how you can join us as a volunteer."
-        image="/images/club/club-dental-group.jpg"
+        image="/images/programs/mhd-breakthestigma.jpg"
       />
 
       {/* Founder / lead */}

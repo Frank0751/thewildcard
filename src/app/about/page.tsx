@@ -27,7 +27,7 @@ const TIMELINE = [
 export default function AboutPage() {
   return (
     <SiteShell>
-      <PageHero eyebrow="About Us" title="We exist for the ones most often overlooked." description="The Wild Card Project is a youth-focused nonprofit in Ghana working across Education, Wellbeing, and Empowerment. We help overlooked young people become aces." image="/images/club/club-outdoor-veana.jpg" />
+      <PageHero eyebrow="About Us" title="We exist for the ones most often overlooked." description="The Wild Card Project is a youth-focused nonprofit in Ghana working across Education, Wellbeing, and Empowerment. We help overlooked young people become aces." image="/images/club/club-dental-group.jpg" />
       <section id="founder" className="scroll-mt-24 bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal className="mx-auto max-w-3xl text-center">

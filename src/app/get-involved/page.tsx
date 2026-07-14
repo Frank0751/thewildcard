@@ -29,7 +29,7 @@ export default function GetInvolvedPage() {
 
   return (
     <SiteShell>
-      <PageHero eyebrow="Donate and Get Involved" title="Help us turn more wild cards into aces." description="Give in seconds with Mobile Money, straight from your phone. International donors can give by card through Paystack or Flutterwave. Or volunteer, partner, and attend our programs." image="/images/programs/mhd-receiving.jpg" />
+      <PageHero eyebrow="Donate and Get Involved" title="Help us turn more wild cards into aces." description="Give in seconds with Mobile Money, straight from your phone. International donors can give by card through Paystack or Flutterwave. Or volunteer, partner, and attend our programs." image="/images/programs/mhd-demo.jpg" />
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <div id="donate" className="scroll-mt-24">

@@ -46,10 +46,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-brand-cream shadow-sm supports-[backdrop-filter]:bg-brand-cream/90 supports-[backdrop-filter]:backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-8">
         <Link href="/" className="group flex items-center gap-3">
-          <img src="/logo.png" alt="The Wild Card Project logo" className="h-11 w-11 object-contain transition-transform group-hover:scale-105" />
+          <img src="/logo.png" alt="The Wild Card Project logo" className="h-16 w-16 object-contain transition-transform group-hover:scale-105" />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-lg font-semibold text-brand-teal">The Wild Card Project</span>
-            <span className="eyebrow text-brand-teal-light">Wild Card to Aces</span>
+            <span className="eyebrow text-brand-teal-light">Turning Wild Cards into Aces.</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">

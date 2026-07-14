@@ -28,7 +28,7 @@ export const PROJECTS: ProjectSummary[] = [
     tagline: "Turning Wild Cards into Aces.",
     summary:
       "A structured youth enrichment initiative. We design intentional weekly sessions that develop creativity, literacy, communication, critical thinking, movement, and character in children, exposing them to new skills, new mentors, and new possibilities beyond traditional academics.",
-    image: "/photos/child-quality-education.jpg",
+    image: "/images/club/club-dental-group.jpg",
     href: "/projects/wild-card-club",
     status: "active",
     badge: "Flagship Project",
