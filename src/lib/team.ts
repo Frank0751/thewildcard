@@ -63,7 +63,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Richard Acolatse",
     role: "Finance Director",
     bio: "Richard Acolatse is the Finance Director of The Wild Card Project. He holds a Bachelor's degree in Business Administration from the University of Professional Studies, Accra (UPSA), and a Master's degree in Accounting and Taxation. He currently works at EY and is the founder of Car Culture. He is dedicated to community development and has supported students in government junior high schools across Ghana through donations of food, stationery, and other essential learning materials.",
-    image: "",
+    image: "/images/team/richard-acolatse.jpg",
     socials: {
       instagram: "https://www.instagram.com/Rychee_richh",
       twitter: "https://x.com/rycheee_",
@@ -75,7 +75,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Kobby Senam",
     role: "Creative Director",
     bio: "Kobby Senam is a creative strategist and brand designer with a passion for using design to tell compelling stories. He is the co-founder of Cranion House (now KomiKreatives) and currently serves as a Brand Designer at Chroma Digital. His portfolio includes work on the Creative and Communications Team behind the NDC People's Manifesto (2020). At The Wild Card Project, Kobby oversees creative direction, branding, visual identity, and communications, ensuring every initiative is presented with clarity, purpose, and impact.",
-    image: "",
+    image: "/images/team/kobby-senam.jpg",
     socials: {
       instagram: "https://www.instagram.com/kobbysenam_jnr",
       linkedin: "https://www.linkedin.com/search/results/people/?keywords=Senam%20Alifo",
@@ -86,7 +86,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Grace Darko",
     role: "Program Coordinator",
     bio: "Grace Darko holds a Diploma in Youth Development Work from the University of Ghana. She is passionate about community development, youth empowerment, and lifelong learning. As an intern, she is eager to learn, contribute, and gain practical experience in the non-profit sector.",
-    image: "",
+    image: "/images/team/grace-darko.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/search/results/people/?keywords=Grace%20Darko",
       email: "mailto:gracedarko013@gmail.com",

@@ -56,7 +56,7 @@ function MemberSocials({ member }: { member: TeamMember }) {
 
 function MemberAvatar({ member, className }: { member: TeamMember; className?: string }) {
   if (member.image) {
-    return <img src={member.image} alt={member.name} className={`h-full w-full object-cover ${className ?? ""}`} loading="lazy" />;
+    return <img src={member.image} alt={member.name} className={`h-full w-full object-cover object-top ${className ?? ""}`} loading="lazy" />;
   }
   return (
     <div className={`flex h-full w-full items-center justify-center bg-brand-teal ${className ?? ""}`}>
@@ -117,7 +117,7 @@ export default function TeamPage() {
               {rest.map((member, i) => (
                 <Reveal key={`${member.name}-${i}`} delay={i * 100}>
                   <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-background ring-1 ring-border/60 transition-all hover:shadow-lg hover:ring-brand-teal/20">
-                    <div className="relative aspect-[4/3] overflow-hidden bg-brand-cream-deep">
+                    <div className="relative aspect-[3/4] overflow-hidden bg-brand-cream-deep">
                       <MemberAvatar member={member} />
                     </div>
                     <div className="flex flex-1 flex-col p-6">
